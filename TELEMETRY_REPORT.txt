@@ -1,0 +1,67 @@
+==================================================================
+  CNS SOVEREIGN KERNEL - OMEGA v3 - SEALED TELEMETRY REPORT
+  Real public telemetry - each source sealed with SHA-256
+==================================================================
+  Capture date (UTC): 2026-08-03
+  Feeds PUBLIC and re-fetchable. Recompute any SHA-256 to verify.
+==================================================================
+
+GEOPHYSICAL / SEISMIC
+  Source     : USGS (earthquake.usgs.gov)
+  Records    : 10,615 earthquakes (30 days)
+  Peak event : M7.3 - 52 km W of Puerto Madero, Mexico
+  Processed  : 10,615 records
+  Raw SHA-256: 623c4df1add1cd9a9198ec0d0e31c0cad66611860c443d9da0ecb165df43682f
+
+AEROSPACE / ORBITAL
+  Source     : CelesTrak (celestrak.org)
+  Records    : 16,276 satellites
+  Processed  : 16,276 records
+  Raw SHA-256: 5f7db3fd38a1642cd647d370476859744e7231afc24f21285aaccad52a784653
+
+CYBER / EXPLOITED VULNERABILITIES
+  Source     : CISA KEV (cisa.gov)
+  Records    : 1,657 exploited vulnerabilities
+  Ransomware : 334 linked
+  Processed  : 1,657 records
+  Raw SHA-256: 16acee8334e59e44ccbaed4da7d02b409144061542b64ad74a9443fb7842a828
+
+PUBLIC AIR TRAFFIC (ADS-B)
+  Source     : OpenSky (opensky-network.org)
+  Records    : 9,524 aircraft snapshot
+  Raw SHA-256: 648cfea29f892644642080572dda3bb72ce4589e063e27da78866c35133b3ca5
+
+OCEAN / COASTAL
+  Source     : NOAA NDBC (ndbc.noaa.gov)
+  Processed  : 900 records
+  Raw SHA-256: 14243a08846345e7613a44ad6ff7ae5bdc401b54804c08f2eb4acc6dfa3bf4e3
+
+ELECTRIC POWER / ENERGY
+  Processed  : 1,640 records
+
+BGP ROUTE INTEGRITY
+  Processed  : 20,000 records
+
+RPKI VALIDATION
+  Processed  : 53 records
+
+EPSS PROBABILITY
+  Processed  : 1,000 records
+
+BOTNET C2
+  Processed  : 5 records
+
+SOFTWARE SUPPLY CHAIN
+  Processed  : 32 records
+
+SPACE WEATHER
+  Processed  : 60 records
+
+GLOBAL SECURITY OSINT
+  Processed  : 1 records
+
+==================================================================
+  TOTAL REAL RECORDS: 52,240  |  Domains: 13
+  TRIAL MERKLE ROOT (master seal): 262ce4465d899d6ae88f7e646d1046682be25379aa4cf27acd318d679eae20ee
+==================================================================
+  "CNS measures the cause; it does not wait for the effect."

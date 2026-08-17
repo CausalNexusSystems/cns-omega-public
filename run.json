@@ -1,0 +1,94 @@
+{
+  "cns": {
+    "system": "Causal Nexus Systems (CNS)",
+    "product": "CNS_SOVEREIGN_KERNEL",
+    "author": "Anthony Moreno",
+    "organization": "Causal Nexus Systems LLC",
+    "ip_basis": "USPTO Provisional #63/896,666, #64/043,866 & #64/067,492"
+  },
+  "run_id": "OMEGA_RUN_20260804T135015Z",
+  "timestamp_utc": "2026-08-04T13:55:33Z",
+  "schema_version": "1.0",
+  "kind": "RUN_SEAL",
+  "module_scope": "SOVEREIGN_KERNEL_TRIAD",
+  "modules": [
+    "K24.1-RS",
+    "IRON_GUARDIAN_V3",
+    "SQS_DEEL"
+  ],
+  "chain": "K24.1 decides -> Iron Guardian V3 protects -> SQS/DEEL seals",
+  "decision_readout": "",
+  "merkle_root": "7624c8f081594e75f39149ba7d7b47b0f2be4e4d06bc294de0e08e4cbfe03fbb",
+  "manifest_sha256": "a86e73d7787269587fa53214b0ce8bc471bebbaa50b0c64ca489f08def563859",
+  "architecture": "FAIL_CLOSED_BY_CAUSAL_COHERENCE",
+  "synthetic": false,
+  "public_scope": [
+    "report/run_full_report.txt",
+    "report/run_header.txt",
+    "report/summary.txt"
+  ],
+  "private_scope": [
+    "data/OMEGA_REPORT.md",
+    "data/TELEMETRY_REPORT.txt",
+    "data/audit.json",
+    "data/exercise_descriptor.json",
+    "data/metrics.json",
+    "data/phase1",
+    "data/phase2",
+    "data/phase3",
+    "data/phase4",
+    "data/phase5",
+    "data/phase6",
+    "data/telemetry_raw"
+  ],
+  "artifacts": [
+    {
+      "file": "data/OMEGA_REPORT.md",
+      "sha256": "7534f009971a3ea61e852cb293ee3daa334a5581e65637ce48195ffb2fbae937"
+    },
+    {
+      "file": "data/TELEMETRY_REPORT.txt",
+      "sha256": "599027fbfdb23f527b208edd137881f8ec84a61736e413e57174efb3cb440ccf"
+    },
+    {
+      "file": "data/audit.json",
+      "sha256": "944dc71b502bfa6c781380956c52391858be12d4dc098acdc2daa903b5421c88"
+    },
+    {
+      "file": "data/exercise_descriptor.json",
+      "sha256": "2fff36c070e8ca257c83dfde8a661f2961b2d7ac632c700030dfe1afdbc6c7e7"
+    },
+    {
+      "file": "data/metrics.json",
+      "sha256": "b74d104f3afbf292cf2c9fcd3728626018f60813720252bf2370162616c8a812"
+    },
+    {
+      "file": "report/run_full_report.txt",
+      "sha256": "6d23dc0823125fce797a6280a6992e731d54bf4366e230ed4780831145c3d92c"
+    },
+    {
+      "file": "report/run_header.txt",
+      "sha256": "0a66f6f85e0aa9cbf1c37f92c5020e19cfe195cb01a5a0d56b900a81de41b469"
+    },
+    {
+      "file": "report/summary.txt",
+      "sha256": "1263812591f6216476502ca5882ec478591c02b90f45d8ddac841431ac0b1513"
+    }
+  ],
+  "claim_boundary": {
+    "public_source_only": true,
+    "live_telemetry_claimed": false,
+    "classified_telemetry_claimed": false,
+    "outcome_forcing": false,
+    "json_result_manipulation": false
+  },
+  "evaluator_explanation": {
+    "what_this_run_is": "A sovereign-kernel triad run. K24.1 issues a deterministic causal decision over normalized domain telemetry; Iron Guardian V3 enforces protection proportional to that decision; SQS/DEEL seals the evidence with SHA-256 and a Merkle root.",
+    "decision_scale": "K24.1: 0=Green, 1=Observe, 2=Review, 3=SafeState. Iron Guardian V3: 0=ALLOW, 1=MONITOR, 2=HARDEN/REVIEW, 3=QUARANTINE, 4=SafeState.",
+    "how_to_read": "decision_readout shows the actual chain decision for this run's input.",
+    "how_to_verify": "1) Recompute SHA-256 of each file in artifacts (also in seal/run_files_sha256.csv). 2) Recompute the Merkle root and compare with seal/run_merkle_root.txt / merkle_root here. 3) Run external_audit_public/validate_external_package.py. Valid only if PASS.",
+    "determinism": "no_std deterministic kernel: identical input yields identical seal on any compliant environment (verified cross-machine).",
+    "claim_boundary": "Public-source telemetry only. No live/classified/missile telemetry claimed. No outcome forcing. No JSON result manipulation.",
+    "confidentiality": "This package proves WHAT was decided and that it is sealed and reproducible, WITHOUT revealing the internal mechanisms by which CNS produces the result (proprietary). Public proof and private evidence are separated."
+  }
+}
